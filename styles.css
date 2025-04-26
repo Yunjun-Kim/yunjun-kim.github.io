@@ -1,24 +1,4 @@
 
-body {
-  background: linear-gradient(-45deg, #E6E6FA, #FDE2E4, #CDEAC0, #FFF1C1);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'YunjunKim', sans-serif;
-}
-
-.chick {
-  font-size: 80px;
-  margin-bottom: 20px;
-}
-
-
 h1 {
   text-transform: uppercase;
   line-height: 1;
@@ -64,3 +44,25 @@ li a:hover {
       background-position: 0% 40%;
   }
 }
+
+
+body {
+  background: linear-gradient(-45deg, #E6E6FA, #FDE2E4, #CDEAC0, #FFF1C1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'YunjunKim', sans-serif;
+}
+
+.chick {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+
