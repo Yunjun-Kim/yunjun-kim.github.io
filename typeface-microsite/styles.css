@@ -232,6 +232,11 @@
     word-break: break-word;
   }
 
+  .download-section {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
   .download-button {
     display: inline-block;
     background-color: #e07a5f;
