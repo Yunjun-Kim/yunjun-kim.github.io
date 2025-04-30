@@ -231,4 +231,23 @@
     font-family: 'YunjunKim', serif;
     word-break: break-word;
   }
+
+  .download-button {
+    display: inline-block;
+    background-color: #e07a5f;
+    color: white;
+    font-family: 'YunjunKim', serif;
+    font-size: 1.8rem;         /* ✅ 폰트 크기 크게 */
+    padding: 1rem 2.5rem;      /* ✅ 버튼 내부 여백 늘리기 */
+    border-radius: 16px;       /* ✅ 모서리 둥글기 조절 */
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #d1644c;
+    transform: translateY(-4px); /* hover 반응도 강조 */
+  }
+  
   
