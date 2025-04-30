@@ -1,3 +1,4 @@
+/* 전체 배경 및 기본 폰트 설정 */
 body {
     margin: 0;
     padding: 40px;
@@ -5,6 +6,21 @@ body {
     font-family: sans-serif;
 }
 
+/* 페이지 상단 타이틀 */
+.page-title {
+    text-align: center;
+    font-family: 'YunjunKim', serif;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.page-title h1 {
+    font-size: 8rem;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* 메인 콘텐츠 박스 */
 .main-container {
     max-width: 800px;
     margin: auto;
@@ -15,21 +31,14 @@ body {
     border: 2px solid black;
 }
 
-/* 타이틀 왼쪽 정렬 */
-header h1 {
-    font-size: 75px;
-    text-align: left;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
+/* 구분선 */
 .divider {
     border: none;
     border-top: 1px solid #999;
     margin: 1.5rem 0;
 }
 
-/* 바디카피 왼쪽 정렬 */
+/* Hero Section */
 .hero {
     text-align: left;
     margin-bottom: 2rem;
@@ -40,6 +49,7 @@ header h1 {
     margin-top: 0.5rem;
 }
 
+/* Interactive Bookshelf */
 .interactive {
     text-align: center;
     margin: 2rem 0;
@@ -57,23 +67,24 @@ header h1 {
     justify-content: center;
 }
 
+/* 셰익스피어 박스 한 줄 정렬 */
 .shelf {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* 줄바꿈 없이 한 줄로 */
     margin: 10px 0;
 }
 
-/* 책 박스 스타일 + Hover 효과 */
+/* 책 박스 스타일 */
 .book {
-    width: 50px;
-    height: 130px;
+    width: 55px;             /* 크기 조정 */
+    height: 140px;
     background-color: #ccc;
-    margin: 5px;
+    margin: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 36px;         /* 폰트 크게 */
     color: white;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -86,24 +97,13 @@ header h1 {
     background-color: #3d405b;
 }
 
-/* Hover 시 클로즈업 */
 .book:hover {
     transform: scale(1.1);
     background-color: #f2cc8f;
     color: #2b2b2b;
 }
 
-.quote-box.static {
-    text-align: left;
-    padding: 20px 0;
-    font-size: 1.1rem;
-    color: #333;
-    font-family: 'YunjunKim', serif;
-    max-width: 600px;
-}
-
-
-
+/* Use Case Section */
 .use-case {
     display: flex;
     gap: 40px;
@@ -124,7 +124,6 @@ header h1 {
     transform: translateX(-50%);
 }
 
-
 .text-block,
 .headline-block {
     flex: 1;
@@ -136,21 +135,34 @@ header h1 {
     font-weight: bold;
 }
 
+/* 공통 텍스트 강조 */
+.text-block em,
+.hero p em,
+.interactive p em,
+.headline-block h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Footer */
 footer {
     text-align: left;
     font-size: 1rem;
     margin-top: 2rem;
 }
 
-.text-block em,
-.hero p em,
-.interactive p em,
-.headline-block h2 {
-    font-style: normal;   
-    font-weight: normal;  
-    font-size: 1.5rem;    
-    margin-bottom: 0.5rem;
-    display: block;
+/* Glyph Set Section */
+.glyph-set {
+    margin-top: 3rem;
+    text-align: center;
 }
 
-
+.glyphs {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-family: 'YunjunKim', serif;
+    word-break: break-word;
+}
