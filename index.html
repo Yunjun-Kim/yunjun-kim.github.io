@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>YunjunKim_Class Site</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>YunjunKim_Class Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @font-face {
+      font-family: 'YunjunKim';
+      src: url('YunjunKim%20Final22.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="chick">🐣</div>
-    <h1>Welcome to my class site!</h1>
-    <ul>
-      <li><a href="https://yunjun-kim.github.io/exercise-1/"><span>🤍</span> Exercise 1</a></li>
-        <li><a href="https://codepen.io/Yun-Jun-Kim/pen/emmmzjy?editors=1100" target="_blank">
-            <span>💛</span> Exercise 2</a></li>
-        <li>
-          <a href="https://codepen.io/Yun-Jun-Kim/pen/JooWBqw?editors=1100" target="_blank">
-            <span>🩷</span> Exercise 3</a></li>
-        <li><a href="https://yunjun-kim.github.io/typeface-microsite/" target="_blank">
-          <span>💜</span> Typeface Microsite</a></li>
-    </ul>  
+  <div class="chick">🐣</div>
+
+  <!-- 타이틀: 각 글자 개별 span 처리 -->
+  <h1 class="sparkle-title">
+    <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+    <span> </span>
+    <span>T</span><span>O</span>
+    <span> </span>
+    <span>M</span><span>Y</span>
+    <span> </span>
+    <span>C</span><span>L</span><span>A</span><span>S</span><span>S</span>
+    <span> </span>
+    <span>S</span><span>I</span><span>T</span><span>E</span><span>!</span>
+  </h1>
+
+  <ul>
+    <li><a href="https://yunjun-kim.github.io/exercise-1/"><span>🤍</span> Exercise 1</a></li>
+    <li><a href="https://codepen.io/Yun-Jun-Kim/pen/emmmzjy?editors=1100" target="_blank"><span>💛</span> Exercise 2</a></li>
+    <li><a href="https://codepen.io/Yun-Jun-Kim/pen/JooWBqw?editors=1100" target="_blank"><span>🩷</span> Exercise 3</a></li>
+    <li><a href="https://yunjun-kim.github.io/typeface-microsite/" target="_blank"><span>💜</span> Typeface Microsite</a></li>
+  </ul>
+
+  <!-- 각 글자에 delay 변수 주기 -->
+  <script>
+    const letters = document.querySelectorAll('.sparkle-title span');
+    letters.forEach((span, i) => {
+      span.style.setProperty('--i', i);
+    });
+  </script>
 </body>
 </html>

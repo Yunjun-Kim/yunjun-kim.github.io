@@ -1,17 +1,64 @@
 @font-face {
   font-family: 'YunjunKim';
-  src: url('YunjunKim%20Final22.otf') format('opentype');
+  src: url('YunjunKim Final22.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-h1 {
-  text-transform: uppercase;
-  line-height: 1;
-  font-size: 32px;
-  margin-bottom: 30px;
+body {
+  background: linear-gradient(-45deg, #E6E6FA, #FDE2E4, #CDEAC0, #FFF1C1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'YunjunKim', sans-serif;
 }
 
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+
+.chick {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+/* 반짝이고 고정되는 효과 */
+.sparkle-title span {
+  display: inline-block;
+  animation: sparkle 2s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+  animation-iteration-count: 1;
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes sparkle {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #e07a5f;
+  }
+  100% {
+    color: #3d405b;
+  }
+}
 
 ul {
   list-style: none;
@@ -38,37 +85,3 @@ li a:hover {
   background-color: #8e6ec6;
   transform: translateY(-2px);
 }
-
-@keyframes gradientBG {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 40%;
-  }
-}
-
-
-body {
-  background: linear-gradient(-45deg, #E6E6FA, #FDE2E4, #CDEAC0, #FFF1C1);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'YunjunKim', sans-serif;
-}
-
-.chick {
-  font-size: 80px;
-  margin-bottom: 20px;
-}
-
-
